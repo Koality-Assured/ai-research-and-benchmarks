@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-research-and-benchmarks"
+version = "0.1.0"
+description = "Public repository of comparative agent harness research, industry framework evaluations, and benchmark reports"
+readme = "README.md"
+authors = [{ name = "Koality-Assured", email = "research@koality-assured.org" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.20.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+]
+
+[project.scripts]
+benchmark-runner = "harnesses.runner:main"
+cost-calc = "telemetry.cost_calculator:main"
