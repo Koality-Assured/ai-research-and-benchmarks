@@ -63,7 +63,7 @@ Agent cards under `ai-tooling/a2a/agent-cards/*.json` specify:
 
 1. **Tier 1 (Fast-Path Static)**: Exact regex and trigger keyword matching in `skill-dispatch.md` (< 1ms, 0 tokens).
 2. **Tier 2 (Precision BM25 / QMD)**: Keyword search over skill descriptions and area maps when fast-path misses (~5ms, 0 tokens).
-3. **Tier 3 (LLM Ambiguity Gate)**: Structured triage call only when multiple skills match or intent is ambiguous.
+3. **Tier 3 (LLM Triage Gate)**: Structured triage call only when multiple skills match or intent is ambiguous.
 
 ## 4. Context isolation and structured result envelopes
 
