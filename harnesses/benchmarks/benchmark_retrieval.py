@@ -103,7 +103,9 @@ def run_qmd_search(query: str, limit: int = 5) -> list[str]:
             try:
                 data = json.loads(proc.stdout)
                 if isinstance(data, list):
-                    return [item.get("path", "") for item in data if isinstance(item, dict)]
+                    results = [item.get("path", "") for item in data if isinstance(item, dict)]
+                    if results:
+                        return results
             except json.JSONDecodeError:
                 pass
     except Exception:
@@ -115,21 +117,21 @@ def fallback_search(query: str, limit: int = 5) -> list[str]:
     """Offline deterministic keyword relevance ranker for testing."""
     keywords = [k.lower() for k in query.split()]
     scores: list[tuple[float, str]] = []
-
     for path in ROOT.rglob("*.md"):
-        if any(part.startswith(".") for part in path.parts) or "scratch" in path.parts:
+        rel = path.relative_to(ROOT)
+        if any(part.startswith(".") for part in rel.parts) or "scratch" in rel.parts:
             continue
-        rel = path.relative_to(ROOT).as_posix()
+        rel_posix = rel.as_posix()
         try:
             content = path.read_text(encoding="utf-8", errors="replace").lower()
-            rel_lower = rel.lower()
+            rel_lower = rel_posix.lower()
             score = 0.0
             for kw in keywords:
                 if kw in rel_lower:
                     score += 5.0
                 score += min(5.0, content.count(kw) * 0.5)
             if score > 0:
-                scores.append((score, rel))
+                scores.append((score, rel_posix))
         except OSError:
             continue
 
