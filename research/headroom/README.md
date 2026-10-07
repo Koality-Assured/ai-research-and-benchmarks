@@ -41,7 +41,6 @@ MCP-only compression is opt-in per tool call and can itself add context (upstrea
 - <https://headroom-docs.vercel.app/docs/mcp>
 - <https://pypi.org/project/headroom-ai/>
 
-## Related
+## Standalone use
 
-- Spec: [`../../projects/headroom-cost-layer/README.md`](../../projects/headroom-cost-layer/README.md)
-- Ops: [`../../supporting/headroom/README.md`](../../supporting/headroom/README.md)
+This research note is self-contained with respect to the findings above. The AI Router project plan and private Headroom operating notes are not included in this repository. Use the upstream Headroom documentation linked above and follow the destination's local installation and security rules.
