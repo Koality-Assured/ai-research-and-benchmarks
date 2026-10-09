@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" role="img" aria-label="AI Research and Benchmarks Logo">
+  <defs>
+    <!-- Background Canvas Gradients -->
+    <radialGradient id="canvasGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0E162E" />
+      <stop offset="45%" stop-color="#080C1B" />
+      <stop offset="80%" stop-color="#04060E" />
+      <stop offset="100%" stop-color="#020307" />
+    </radialGradient>
+
+    <!-- Ambient Core Glows -->
+    <radialGradient id="ambientCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.32" />
+      <stop offset="40%" stop-color="#2563EB" stop-opacity="0.18" />
+      <stop offset="75%" stop-color="#7C3AED" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="ambientViolet" cx="65%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Linear Palettes -->
+    <linearGradient id="cyberSapphireCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="45%" stop-color="#38BDF8" />
+      <stop offset="75%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <linearGradient id="violetToCyan" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="35%" stop-color="#6366F1" />
+      <stop offset="70%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+
+    <linearGradient id="radarPolyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.35" />
+    </linearGradient>
+
+    <linearGradient id="baselinePolyGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.08" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="goldCaliper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="20%" stop-color="#00F0FF" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="1" />
+      <stop offset="80%" stop-color="#A855F7" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="bloomSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="laserGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="dotBloom" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="url(#canvasGrad)" />
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="none" stroke="url(#borderGrad)" stroke-width="2.5" />
+
+  <!-- Ambient Light Fields -->
+  <circle cx="256" cy="256" r="230" fill="url(#ambientCyan)" />
+  <circle cx="310" cy="190" r="170" fill="url(#ambientViolet)" />
+
+  <!-- High-Tech Coordinate Grid Overlay -->
+  <g opacity="0.12" stroke="#38BDF8" stroke-width="0.8">
+    <line x1="64" y1="128" x2="448" y2="128" />
+    <line x1="64" y1="192" x2="448" y2="192" />
+    <line x1="64" y1="256" x2="448" y2="256" />
+    <line x1="64" y1="320" x2="448" y2="320" />
+    <line x1="64" y1="384" x2="448" y2="384" />
+    <line x1="128" y1="64" x2="128" y2="448" />
+    <line x1="192" y1="64" x2="192" y2="448" />
+    <line x1="256" y1="64" x2="256" y2="448" />
+    <line x1="320" y1="64" x2="320" y2="448" />
+    <line x1="384" y1="64" x2="384" y2="448" />
+  </g>
+
+  <!-- Corner Brackets & Frame Decals -->
+  <g stroke="#00F0FF" stroke-width="2" fill="none" opacity="0.75">
+    <path d="M 48,84 L 48,48 L 84,48" />
+    <path d="M 428,48 L 464,48 L 464,84" />
+    <path d="M 464,428 L 464,464 L 428,464" />
+    <path d="M 84,464 L 48,464 L 48,428" />
+  </g>
+
+  <!-- Caliper Outer Precision Ring -->
+  <g id="caliperOuterDial">
+    <!-- Outer Precision Ring -->
+    <circle cx="256" cy="256" r="195" fill="none" stroke="#1E293B" stroke-width="6" />
+    <circle cx="256" cy="256" r="195" fill="none" stroke="url(#cyberSapphireCyan)" stroke-width="2" opacity="0.8" />
+    <circle cx="256" cy="256" r="185" fill="none" stroke="#00F0FF" stroke-width="1" stroke-dasharray="2 6" opacity="0.6" />
+
+    <!-- Precision Degree / Metric Scale Tick Marks (Every 15 deg) -->
+    <!-- Top & Bottom Major Caliper Vernier Ticks -->
+    <g stroke="#00F0FF" stroke-width="1.8" opacity="0.85">
+      <line x1="256" y1="61" x2="256" y2="75" />
+      <line x1="256" y1="437" x2="256" y2="451" />
+      <line x1="61" y1="256" x2="75" y2="256" />
+      <line x1="437" y1="256" x2="451" y2="256" />
+
+      <!-- Sub-ticks at 45 deg angles -->
+      <line x1="118.5" y1="118.5" x2="128.4" y2="128.4" />
+      <line x1="393.5" y1="118.5" x2="383.6" y2="128.4" />
+      <line x1="393.5" y1="393.5" x2="383.6" y2="383.6" />
+      <line x1="118.5" y1="393.5" x2="128.4" y2="383.6" />
+    </g>
+
+    <!-- Minor Precision Radial Scale -->
+    <g stroke="#818CF8" stroke-width="1" opacity="0.5">
+      <line x1="158.5" y1="87.3" x2="164.5" y2="94.2" />
+      <line x1="353.5" y1="87.3" x2="347.5" y2="94.2" />
+      <line x1="424.7" y1="158.5" x2="417.8" y2="164.5" />
+      <line x1="424.7" y1="353.5" x2="417.8" y2="347.5" />
+      <line x1="353.5" y1="424.7" x2="347.5" y2="417.8" />
+      <line x1="158.5" y1="424.7" x2="164.5" y2="417.8" />
+      <line x1="87.3" y1="353.5" x2="94.2" y2="347.5" />
+      <line x1="87.3" y1="158.5" x2="94.2" y2="164.5" />
+    </g>
+  </g>
+
+  <!-- Caliper Vernier Jaw Arms (Left & Right Precision Guides) -->
+  <g id="caliperGuides">
+    <!-- Left Caliper Jaw Indicator -->
+    <path d="M 68,230 L 52,230 L 52,282 L 68,282" fill="none" stroke="url(#goldCaliper)" stroke-width="2.5" />
+    <path d="M 52,256 L 40,256" stroke="#00F0FF" stroke-width="3" filter="url(#laserGlow)" />
+    <!-- Left vernier micrometer notches -->
+    <line x1="58" y1="242" x2="64" y2="242" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="58" y1="250" x2="66" y2="250" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="58" y1="262" x2="66" y2="262" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="58" y1="270" x2="64" y2="270" stroke="#38BDF8" stroke-width="1.5" />
+
+    <!-- Right Caliper Jaw Indicator -->
+    <path d="M 444,230 L 460,230 L 460,282 L 444,282" fill="none" stroke="url(#goldCaliper)" stroke-width="2.5" />
+    <path d="M 460,256 L 472,256" stroke="#00F0FF" stroke-width="3" filter="url(#laserGlow)" />
+    <!-- Right vernier micrometer notches -->
+    <line x1="448" y1="242" x2="454" y2="242" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="446" y1="250" x2="454" y2="250" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="446" y1="262" x2="454" y2="262" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="448" y1="270" x2="454" y2="270" stroke="#38BDF8" stroke-width="1.5" />
+  </g>
+
+  <!-- Central Radar Chart Framework -->
+  <g id="radarChartGrid">
+    <!-- Concentric Hexagons (Grid levels: 25%, 50%, 75%, 100%) -->
+    <!-- Level 4: 100% (r=130) -->
+    <polygon points="256,126 368.6,191 368.6,321 256,386 143.4,321 143.4,191"
+             fill="#0B132B" fill-opacity="0.35"
+             stroke="#2563EB" stroke-width="1.5" opacity="0.6" stroke-dasharray="4 3" />
+
+    <!-- Level 3: 75% (r=97.5) -->
+    <polygon points="256,158.5 340.4,207.2 340.4,304.8 256,353.5 171.6,304.8 171.6,207.2"
+             fill="none" stroke="#38BDF8" stroke-width="1.2" opacity="0.45" />
+
+    <!-- Level 2: 50% (r=65) -->
+    <polygon points="256,191 312.3,223.5 312.3,288.5 256,321 199.7,288.5 199.7,223.5"
+             fill="none" stroke="#6366F1" stroke-width="1" opacity="0.35" stroke-dasharray="3 3" />
+
+    <!-- Level 1: 25% (r=32.5) -->
+    <polygon points="256,223.5 284.1,239.8 284.1,272.2 256,288.5 227.9,272.2 227.9,239.8"
+             fill="none" stroke="#7C3AED" stroke-width="0.8" opacity="0.25" />
+
+    <!-- 6 Hexagonal Radial Axes -->
+    <g stroke="#38BDF8" stroke-width="1.2" opacity="0.5">
+      <!-- Axis 1: Pass@1 (Top 90 deg) -->
+      <line x1="256" y1="256" x2="256" y2="126" />
+      <!-- Axis 2: Headroom (Top-Right 30 deg) -->
+      <line x1="256" y1="256" x2="368.6" y2="191" />
+      <!-- Axis 3: Cache Hit (Bottom-Right 330 deg) -->
+      <line x1="256" y1="256" x2="368.6" y2="321" />
+      <!-- Axis 4: Cost Eff (Bottom 270 deg) -->
+      <line x1="256" y1="256" x2="256" y2="386" />
+      <!-- Axis 5: Latency (Bottom-Left 210 deg) -->
+      <line x1="256" y1="256" x2="143.4" y2="321" />
+      <!-- Axis 6: Precision (Top-Left 150 deg) -->
+      <line x1="256" y1="256" x2="143.4" y2="191" />
+    </g>
+  </g>
+
+  <!-- Baseline Benchmark Polygon (Comparison Tier) -->
+  <polygon points="256,178 321.4,218 335.2,301.8 256,334 195.8,290.5 186.2,215.7"
+           fill="url(#baselinePolyGrad)"
+           stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.7" />
+
+  <!-- Active Evaluation Benchmark Polygon (High-Precision SOTA Tier) -->
+  <!-- Values: Pass@1=92% (r=120), Headroom=86% (r=112), Cache=94% (r=122), Cost=88% (r=114), Latency=80% (r=104), Precision=95% (r=124) -->
+  <!-- Top: (256, 136) -->
+  <!-- Top-Right: (256 + 112*0.866, 256 - 56) = (353, 200) -->
+  <!-- Bottom-Right: (256 + 122*0.866, 256 + 61) = (361.6, 317) -->
+  <!-- Bottom: (256, 370) -->
+  <!-- Bottom-Left: (256 - 104*0.866, 256 + 52) = (165.9, 308) -->
+  <!-- Top-Left: (256 - 124*0.866, 256 - 62) = (148.6, 194) -->
+  <polygon points="256,136 353,200 361.6,317 256,370 165.9,308 148.6,194"
+           fill="url(#radarPolyGrad)"
+           stroke="url(#cyberSapphireCyan)" stroke-width="3.2" filter="url(#bloomSoft)" />
+  <polygon points="256,136 353,200 361.6,317 256,370 165.9,308 148.6,194"
+           fill="none"
+           stroke="#FFFFFF" stroke-width="1.2" opacity="0.9" />
+
+  <!-- Radar Metric Nodes (Glowing Data Anchors) -->
+  <g id="radarMetricNodes" filter="url(#dotBloom)">
+    <!-- Node 1: Pass@1 -->
+    <circle cx="256" cy="136" r="5" fill="#00F0FF" />
+    <circle cx="256" cy="136" r="2.2" fill="#FFFFFF" />
+
+    <!-- Node 2: Headroom -->
+    <circle cx="353" cy="200" r="5" fill="#38BDF8" />
+    <circle cx="353" cy="200" r="2.2" fill="#FFFFFF" />
+
+    <!-- Node 3: Cache Hit -->
+    <circle cx="361.6" cy="317" r="5" fill="#818CF8" />
+    <circle cx="361.6" cy="317" r="2.2" fill="#FFFFFF" />
+
+    <!-- Node 4: Cost Eff -->
+    <circle cx="256" cy="370" r="5" fill="#A855F7" />
+    <circle cx="256" cy="370" r="2.2" fill="#FFFFFF" />
+
+    <!-- Node 5: Latency -->
+    <circle cx="165.9" cy="308" r="5" fill="#6366F1" />
+    <circle cx="165.9" cy="308" r="2.2" fill="#FFFFFF" />
+
+    <!-- Node 6: Precision -->
+    <circle cx="148.6" cy="194" r="5" fill="#00F0FF" />
+    <circle cx="148.6" cy="194" r="2.2" fill="#FFFFFF" />
+  </g>
+
+  <!-- Telemetry Waveform Pulse Line (Frequency / Latency Stream) -->
+  <g id="telemetryWave">
+    <path d="M 80,392 L 140,392 L 170,392 L 195,372 L 215,410 L 235,360 L 255,420 L 275,340 L 295,405 L 315,385 L 340,392 L 432,392"
+          fill="none" stroke="url(#pulseGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"
+          filter="url(#laserGlow)" />
+
+    <!-- Pulse Peaks Anchor Dots -->
+    <circle cx="235" cy="360" r="3" fill="#00F0FF" />
+    <circle cx="275" cy="340" r="3.5" fill="#FFFFFF" filter="url(#dotBloom)" />
+    <circle cx="295" cy="405" r="2.5" fill="#A855F7" />
+  </g>
+
+  <!-- Central Precision Core Hub -->
+  <g id="coreHub">
+    <!-- Hub Outer Glow Ring -->
+    <circle cx="256" cy="256" r="22" fill="#091124" stroke="url(#cyberSapphireCyan)" stroke-width="2" filter="url(#laserGlow)" />
+    <!-- Hub Reticle Crosshairs -->
+    <line x1="256" y1="242" x2="256" y2="270" stroke="#00F0FF" stroke-width="1.5" />
+    <line x1="242" y1="256" x2="270" y2="256" stroke="#00F0FF" stroke-width="1.5" />
+    <!-- Hub Center Core Pulse -->
+    <circle cx="256" cy="256" r="7" fill="#00F0FF" filter="url(#dotBloom)" />
+    <circle cx="256" cy="256" r="3.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Micro Technical Readout Legend Decals -->
+  <g fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="9" letter-spacing="1.5" font-weight="600">
+    <text x="256" y="112" text-anchor="middle" fill="#00F0FF">PASS@1</text>
+    <text x="382" y="184" text-anchor="start" fill="#38BDF8">HEADROOM</text>
+    <text x="382" y="332" text-anchor="start" fill="#818CF8">CACHE</text>
+    <text x="256" y="408" text-anchor="middle" fill="#A855F7">COST EFF</text>
+    <text x="130" y="332" text-anchor="end" fill="#6366F1">LATENCY</text>
+    <text x="130" y="184" text-anchor="end" fill="#00F0FF">PRECISION</text>
+  </g>
+
+  <!-- Top / Bottom Subtitle Badge -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="700" letter-spacing="2" fill="#64748B" text-anchor="middle">
+    <text x="256" y="482">EMPIRICAL HARNESS EVALUATION ENGINE</text>
+  </g>
+</svg>
