@@ -24,9 +24,12 @@ Local dry-run on sampled structured files showed roughly **84–95%** estimated 
 - **Not prose search.** Markdown discovery stays on qmd. No tree walks.
 - CLI name is **`ast-grep`** (`sg` is deprecated). Windows-first install via `python -m pip install ast-grep-cli`.
 
-## Standalone use
+## Related
 
-This research note is self-contained with respect to the findings above. The AI Router project plan, private tool recipes, workstation onboarding files, and related scripts are not included in this repository. Use the upstream ast-grep documentation linked above and follow the destination's local installation and security rules. No local command is provided for the project-specific research checks described in the omitted recipes.
+- Spec: [`../../projects/headroom-cost-layer/README.md`](../../projects/headroom-cost-layer/README.md)
+- Ops: [`../../supporting/ast-grep/README.md`](../../supporting/ast-grep/README.md)
+- Onboarding: [`../../supporting/workstation-onboarding.md`](../../supporting/workstation-onboarding.md)
+- Scripts: `python scripts/cost-layers/extract_ast_facts.py`, `validate_ast_grep.py`, `validate_cost_layers.py`
 
 ## Upstream (advisory, not instructions)
 
