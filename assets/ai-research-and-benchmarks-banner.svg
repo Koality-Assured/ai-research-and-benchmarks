@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="100%" height="auto" role="img" aria-label="AI Research and Benchmarks Hero Banner">
+  <defs>
+    <!-- Background Void Linear Gradient -->
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="35%" stop-color="#090F24" />
+      <stop offset="70%" stop-color="#060A18" />
+      <stop offset="100%" stop-color="#03050A" />
+    </linearGradient>
+
+    <!-- Ambient Core Glows -->
+    <radialGradient id="leftGaugeGlow" cx="22%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.25" />
+      <stop offset="35%" stop-color="#2563EB" stop-opacity="0.18" />
+      <stop offset="65%" stop-color="#7C3AED" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="rightAccentGlow" cx="80%" cy="30%" r="42%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.18" />
+      <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Linear Palettes -->
+    <linearGradient id="cyberSapphire" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="40%" stop-color="#38BDF8" />
+      <stop offset="75%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="titlePlatinum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#F8FAFC" />
+      <stop offset="85%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <linearGradient id="cardBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141E33" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0B1120" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.4" />
+    </linearGradient>
+
+    <linearGradient id="bannerRadarPoly" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35" />
+    </linearGradient>
+
+    <linearGradient id="bannerPulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="15%" stop-color="#00F0FF" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="1" />
+      <stop offset="85%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="bloomBig" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="20" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neonBeam" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Banner Background -->
+  <rect x="0" y="0" width="1280" height="420" fill="url(#bannerBg)" />
+
+  <!-- Ambient Light Envelopes -->
+  <circle cx="280" cy="210" r="280" fill="url(#leftGaugeGlow)" />
+  <circle cx="1060" cy="120" r="240" fill="url(#rightAccentGlow)" />
+
+  <!-- Subtle Matrix Grid -->
+  <g opacity="0.1" stroke="#38BDF8" stroke-width="0.7">
+    <line x1="0" y1="60" x2="1280" y2="60" />
+    <line x1="0" y1="120" x2="1280" y2="120" />
+    <line x1="0" y1="180" x2="1280" y2="180" />
+    <line x1="0" y1="240" x2="1280" y2="240" />
+    <line x1="0" y1="300" x2="1280" y2="300" />
+    <line x1="0" y1="360" x2="1280" y2="360" />
+
+    <line x1="160" y1="0" x2="160" y2="420" />
+    <line x1="320" y1="0" x2="320" y2="420" />
+    <line x1="480" y1="0" x2="480" y2="420" />
+    <line x1="640" y1="0" x2="640" y2="420" />
+    <line x1="800" y1="0" x2="800" y2="420" />
+    <line x1="960" y1="0" x2="960" y2="420" />
+    <line x1="1120" y1="0" x2="1120" y2="420" />
+  </g>
+
+  <!-- Top / Bottom Caliper Edge Precision Vernier Rules -->
+  <g stroke="#00F0FF" stroke-width="1" opacity="0.45">
+    <line x1="40" y1="16" x2="1240" y2="16" />
+    <line x1="40" y1="404" x2="1240" y2="404" />
+    <!-- Top Vernier Ticks -->
+    <line x1="40" y1="16" x2="40" y2="26" />
+    <line x1="140" y1="16" x2="140" y2="23" />
+    <line x1="240" y1="16" x2="240" y2="26" />
+    <line x1="340" y1="16" x2="340" y2="23" />
+    <line x1="440" y1="16" x2="440" y2="26" />
+    <line x1="540" y1="16" x2="540" y2="23" />
+    <line x1="640" y1="16" x2="640" y2="26" />
+    <line x1="740" y1="16" x2="740" y2="23" />
+    <line x1="840" y1="16" x2="840" y2="26" />
+    <line x1="940" y1="16" x2="940" y2="23" />
+    <line x1="1040" y1="16" x2="1040" y2="26" />
+    <line x1="1140" y1="16" x2="1140" y2="23" />
+    <line x1="1240" y1="16" x2="1240" y2="26" />
+
+    <!-- Bottom Vernier Ticks -->
+    <line x1="40" y1="404" x2="40" y2="394" />
+    <line x1="240" y1="404" x2="240" y2="394" />
+    <line x1="440" y1="404" x2="440" y2="394" />
+    <line x1="640" y1="404" x2="640" y2="394" />
+    <line x1="840" y1="404" x2="840" y2="394" />
+    <line x1="1040" y1="404" x2="1040" y2="394" />
+    <line x1="1240" y1="404" x2="1240" y2="394" />
+  </g>
+
+  <!-- Left Side: Visual Insignia (Center cx=240, cy=210) -->
+  <g id="bannerEmblem" transform="translate(10, 0)">
+    <!-- Caliper Dial Rings -->
+    <circle cx="230" cy="210" r="160" fill="none" stroke="#1E293B" stroke-width="4" />
+    <circle cx="230" cy="210" r="160" fill="none" stroke="url(#cyberSapphire)" stroke-width="1.8" opacity="0.75" />
+    <circle cx="230" cy="210" r="150" fill="none" stroke="#00F0FF" stroke-width="1" stroke-dasharray="2 6" opacity="0.5" />
+
+    <!-- Dial Tick Accents -->
+    <g stroke="#00F0FF" stroke-width="1.5" opacity="0.8">
+      <line x1="230" y1="50" x2="230" y2="62" />
+      <line x1="230" y1="358" x2="230" y2="370" />
+      <line x1="70" y1="210" x2="82" y2="210" />
+      <line x1="378" y1="210" x2="390" y2="210" />
+      <!-- Caliper Vernier Jaws -->
+      <path d="M 68,188 L 54,188 L 54,232 L 68,232" fill="none" stroke="#38BDF8" stroke-width="2" />
+      <path d="M 392,188 L 406,188 L 406,232 L 392,232" fill="none" stroke="#818CF8" stroke-width="2" />
+    </g>
+
+    <!-- Radar Chart Concentric Hexagons (Center 230, 210) -->
+    <!-- Max Level: r=105 -->
+    <polygon points="230,105 320.9,157.5 320.9,262.5 230,315 139.1,262.5 139.1,157.5"
+             fill="#0B132B" fill-opacity="0.4"
+             stroke="#2563EB" stroke-width="1.2" opacity="0.6" stroke-dasharray="4 3" />
+    <!-- Mid Level: r=70 -->
+    <polygon points="230,140 290.6,175 290.6,245 230,280 169.4,245 169.4,175"
+             fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.4" />
+    <!-- Low Level: r=35 -->
+    <polygon points="230,175 260.3,192.5 260.3,227.5 230,245 199.7,227.5 199.7,192.5"
+             fill="none" stroke="#6366F1" stroke-width="0.8" opacity="0.3" stroke-dasharray="2 2" />
+
+    <!-- 6 Axes -->
+    <g stroke="#38BDF8" stroke-width="1" opacity="0.45">
+      <line x1="230" y1="210" x2="230" y2="105" />
+      <line x1="230" y1="210" x2="320.9" y2="157.5" />
+      <line x1="230" y1="210" x2="320.9" y2="262.5" />
+      <line x1="230" y1="210" x2="230" y2="315" />
+      <line x1="230" y1="210" x2="139.1" y2="262.5" />
+      <line x1="230" y1="210" x2="139.1" y2="157.5" />
+    </g>
+
+    <!-- Baseline Comparison Polygon -->
+    <polygon points="230,148 282,180 294,247 230,272 181,237 174,177"
+             fill="#1E293B" fill-opacity="0.3"
+             stroke="#64748B" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.7" />
+
+    <!-- SOTA Agent Evaluation Radar Polygon -->
+    <!-- Points at Pass@1=93% (r=98), Headroom=88% (r=92), Cache=95% (r=100), Cost=89% (r=93), Latency=82% (r=86), Precision=96% (r=101) -->
+    <!-- Top: (230, 112) -->
+    <!-- Top-Right: (230 + 92*0.866, 210 - 46) = (309.7, 164) -->
+    <!-- Bottom-Right: (230 + 100*0.866, 210 + 50) = (316.6, 260) -->
+    <!-- Bottom: (230, 303) -->
+    <!-- Bottom-Left: (230 - 86*0.866, 210 + 43) = (155.5, 253) -->
+    <!-- Top-Left: (230 - 101*0.866, 210 - 50.5) = (142.5, 159.5) -->
+    <polygon points="230,112 309.7,164 316.6,260 230,303 155.5,253 142.5,159.5"
+             fill="url(#bannerRadarPoly)"
+             stroke="url(#cyberSapphire)" stroke-width="2.8" filter="url(#neonBeam)" />
+    <polygon points="230,112 309.7,164 316.6,260 230,303 155.5,253 142.5,159.5"
+             fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.9" />
+
+    <!-- Radar Metric Vertex Nodes -->
+    <g filter="url(#nodeGlow)">
+      <circle cx="230" cy="112" r="4" fill="#00F0FF" />
+      <circle cx="309.7" cy="164" r="4" fill="#38BDF8" />
+      <circle cx="316.6" cy="260" r="4" fill="#818CF8" />
+      <circle cx="230" cy="303" r="4" fill="#A855F7" />
+      <circle cx="155.5" cy="253" r="4" fill="#6366F1" />
+      <circle cx="142.5" cy="159.5" r="4" fill="#00F0FF" />
+    </g>
+
+    <!-- Central Precision Reticle -->
+    <circle cx="230" cy="210" r="16" fill="#091124" stroke="url(#cyberSapphire)" stroke-width="1.8" />
+    <line x1="230" y1="198" x2="230" y2="222" stroke="#00F0FF" stroke-width="1.2" />
+    <line x1="218" y1="210" x2="242" y2="210" stroke="#00F0FF" stroke-width="1.2" />
+    <circle cx="230" cy="210" r="5" fill="#00F0FF" filter="url(#nodeGlow)" />
+    <circle cx="230" cy="210" r="2.5" fill="#FFFFFF" />
+
+    <!-- Bottom Telemetry Stream Wave -->
+    <path d="M 60,330 L 110,330 L 135,310 L 155,345 L 175,295 L 195,355 L 215,285 L 235,340 L 255,320 L 280,330 L 370,330"
+          fill="none" stroke="url(#bannerPulseGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+          filter="url(#neonBeam)" />
+    <circle cx="215" cy="285" r="3" fill="#00F0FF" filter="url(#nodeGlow)" />
+    <circle cx="175" cy="295" r="2.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Right Side: Typographic Identity & HUD Content -->
+  <g transform="translate(450, 0)">
+    <!-- Category Eyebrow Pill -->
+    <g transform="translate(0, 52)">
+      <rect x="0" y="0" width="374" height="26" rx="13" fill="#0D1933" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+      <!-- Pulsing Indicator Dot -->
+      <circle cx="16" cy="13" r="4" fill="#00F0FF" filter="url(#nodeGlow)" />
+      <circle cx="16" cy="13" r="2" fill="#FFFFFF" />
+      <text x="30" y="17" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.8">
+        EMPIRICAL BENCHMARKS &amp; TELEMETRY ENGINE
+      </text>
+    </g>
+
+    <!-- Main Repository Title -->
+    <text x="0" y="126" fill="url(#titlePlatinum)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="39" font-weight="900" letter-spacing="-0.5">
+      AI RESEARCH &amp; BENCHMARKS
+    </text>
+
+    <!-- Repository Mission Tagline -->
+    <text x="0" y="158" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="500" letter-spacing="0.3">
+      Comparative Agent Harness Evaluations • Context Tiering • Cost Telemetry
+    </text>
+
+    <!-- Horizontal Divider with Cyan Laser Accent -->
+    <g transform="translate(0, 182)">
+      <line x1="0" y1="0" x2="770" y2="0" stroke="#1E293B" stroke-width="1.5" />
+      <line x1="0" y1="0" x2="220" y2="0" stroke="url(#cyberSapphire)" stroke-width="2" filter="url(#neonBeam)" />
+    </g>
+
+    <!-- 3 High-Tech Metric HUD Cards -->
+    <g transform="translate(0, 206)">
+      <!-- Card 1: Pass@1 Reasoning -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="242" height="150" rx="10" fill="url(#cardBgGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+        <rect x="0" y="0" width="242" height="3" rx="1" fill="#00F0FF" />
+        <!-- Metric Header -->
+        <text x="18" y="28" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">
+          PASS@1 EVALUATION
+        </text>
+        <!-- Big Metric Value -->
+        <text x="18" y="74" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+          94.8%
+        </text>
+        <!-- Micro sparkline graph -->
+        <path d="M 18,92 L 45,92 L 65,85 L 85,90 L 110,80 L 135,84 L 160,76 L 185,78 L 220,72" fill="none" stroke="#00F0FF" stroke-width="1.5" opacity="0.75" />
+        <!-- Description -->
+        <text x="18" y="116" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500">
+          Standardized task eval suites
+        </text>
+        <text x="18" y="132" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600">
+          Reproducible harness pass rate
+        </text>
+      </g>
+
+      <!-- Card 2: Headroom Savings -->
+      <g transform="translate(258, 0)">
+        <rect x="0" y="0" width="242" height="150" rx="10" fill="url(#cardBgGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+        <rect x="0" y="0" width="242" height="3" rx="1" fill="#38BDF8" />
+        <!-- Metric Header -->
+        <text x="18" y="28" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">
+          HEADROOM SAVINGS
+        </text>
+        <!-- Big Metric Value -->
+        <text x="18" y="74" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+          -82.4%
+        </text>
+        <!-- Micro sparkline graph -->
+        <path d="M 18,74 L 50,78 L 90,82 L 130,86 L 170,90 L 220,95" fill="none" stroke="#818CF8" stroke-width="1.5" opacity="0.75" />
+        <!-- Description -->
+        <text x="18" y="116" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500">
+          Tier-4 AST Fact compression
+        </text>
+        <text x="18" y="132" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600">
+          Raw text vs structured facts
+        </text>
+      </g>
+
+      <!-- Card 3: Cost Telemetry -->
+      <g transform="translate(516, 0)">
+        <rect x="0" y="0" width="242" height="150" rx="10" fill="url(#cardBgGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+        <rect x="0" y="0" width="242" height="3" rx="1" fill="#A855F7" />
+        <!-- Metric Header -->
+        <text x="18" y="28" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">
+          COST TELEMETRY
+        </text>
+        <!-- Big Metric Value -->
+        <text x="18" y="74" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+          $0.0038
+        </text>
+        <!-- Micro bar graph -->
+        <g fill="#A855F7" opacity="0.6">
+          <rect x="18" y="82" width="12" height="12" rx="2" />
+          <rect x="36" y="78" width="12" height="16" rx="2" />
+          <rect x="54" y="72" width="12" height="22" rx="2" fill="#00F0FF" opacity="0.9" />
+          <rect x="72" y="84" width="12" height="10" rx="2" />
+          <rect x="90" y="80" width="12" height="14" rx="2" />
+        </g>
+        <!-- Description -->
+        <text x="18" y="116" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500">
+          Cost per resolved issue
+        </text>
+        <text x="18" y="132" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600">
+          Multi-model cache accounting
+        </text>
+      </g>
+    </g>
+
+    <!-- Coordinate & Status Readout Tag in Bottom-Right -->
+    <g transform="translate(560, 396)">
+      <text x="195" y="0" fill="#475569" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="600" text-anchor="end">
+        SYS.BENCHMARK: V1.0.0 // STATUS: NOMINAL
+      </text>
+    </g>
+  </g>
+</svg>
