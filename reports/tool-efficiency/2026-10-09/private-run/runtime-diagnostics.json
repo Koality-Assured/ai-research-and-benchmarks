@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_exit_code": 0,
+  "timeout": false,
+  "runtime_symptoms": [
+    {
+      "source": "Headroom console diagnostic",
+      "observation": "Content detection used the pure-Python backend; Headroom reported its native Magika/ONNX detector is unsafe by default on Windows.",
+      "classification": "host/runtime selection",
+      "effect_observed": "The compression run completed. All 15 trials returned token metrics and all 25 exact gold markers were found after compression.",
+      "confirmed_software_defect": false
+    }
+  ],
+  "confirmed_software_defects": [],
+  "interpretation_limit": "This benchmark did not test detector safety or diagnose a software defect. The warning is recorded as an environment-specific runtime observation only."
+}

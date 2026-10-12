@@ -85,7 +85,7 @@ Empirical trials confirm that LLMs generate syntactically and semantically valid
 ## 5. Architectural Recommendations
 
 1. **Adopt Kyverno as Primary Kubernetes PaC Target**:
-   - For all container and workload admission control, author declarative Kyverno policies aligned with [`docs/standards/kubernetes-security.md`](../../docs/standards/kubernetes-security.md).
+   - For all container and workload admission control, author declarative Kyverno policies aligned with `docs/standards/kubernetes-security.md`.
 2. **Standardize on CEL for Validation**:
    - Where possible, prefer `validate.cel` expressions over complex JMESPath filters to maximize execution efficiency.
 3. **Mandate Declarative Offline Testing**:

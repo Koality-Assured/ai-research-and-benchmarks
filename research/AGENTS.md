@@ -2,7 +2,7 @@
 
 Per-topic deep dives under `research/<topic>/` — investigation notes, not final org standards.
 
-Ingest simply; do not duplicate skills or paste root Critical — link [`../AGENTS.md`](../AGENTS.md). Promote durable standards to `docs/`.
+Ingest simply; do not duplicate skills or paste root Critical — link `../AGENTS.md`. Promote durable standards to `docs/`.
 
 ## Rules
 

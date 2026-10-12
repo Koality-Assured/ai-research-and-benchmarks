@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "total_fixtures": 4,
+    "total_raw_tokens": 2147,
+    "total_compressed_tokens": 2037,
+    "total_tokens_saved": 110,
+    "overall_reduction_pct": 5.1,
+    "overall_fact_accuracy": 100.0,
+    "avg_latency_ms": 72.7
+  },
+  "fixtures": [
+    {
+      "name": "verbose_pytest_log",
+      "category": "command_output",
+      "description": "Verbose pytest test execution output with stack traces and summary",
+      "raw_tokens": 597,
+      "compressed_tokens": 566,
+      "tokens_saved": 31,
+      "reduction_pct": 5.2,
+      "facts_total": 2,
+      "facts_retained": 2,
+      "fact_accuracy_pct": 100.0,
+      "elapsed_ms": 101.4
+    },
+    {
+      "name": "large_git_diff",
+      "category": "git_diff",
+      "description": "Multi-file git diff with added functions and modified imports",
+      "raw_tokens": 559,
+      "compressed_tokens": 531,
+      "tokens_saved": 28,
+      "reduction_pct": 5.0,
+      "facts_total": 3,
+      "facts_retained": 3,
+      "fact_accuracy_pct": 100.0,
+      "elapsed_ms": 51.83
+    },
+    {
+      "name": "ast_symbol_dump",
+      "category": "ast_grep",
+      "description": "Structured symbol table containing classes, methods, and functions",
+      "raw_tokens": 843,
+      "compressed_tokens": 800,
+      "tokens_saved": 43,
+      "reduction_pct": 5.1,
+      "facts_total": 3,
+      "facts_retained": 3,
+      "fact_accuracy_pct": 100.0,
+      "elapsed_ms": 60.89
+    },
+    {
+      "name": "raw_html_payload",
+      "category": "web_fetch",
+      "description": "Raw HTML webpage with boilerplate scripts, navigation, and core article text",
+      "raw_tokens": 148,
+      "compressed_tokens": 140,
+      "tokens_saved": 8,
+      "reduction_pct": 5.4,
+      "facts_total": 3,
+      "facts_retained": 3,
+      "fact_accuracy_pct": 100.0,
+      "elapsed_ms": 76.7
+    }
+  ]
+}

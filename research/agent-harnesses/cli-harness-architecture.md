@@ -68,7 +68,7 @@ graph TD
 
 ### Hermes Agent: closest CLI-is-the-harness match
 
-Official product: [Hermes Agent](https://hermes-agent.nousresearch.com/) (Nous Research). Distinct from the **Nous Hermes model family** (prompt-native tool tokens) covered in [`industry-frameworks.md`](./industry-frameworks.md).
+Official product: [Hermes Agent](https://hermes-agent.nousresearch.com/) (Nous Research). Distinct from the **Nous Hermes model family** (prompt-native tool tokens) covered in [`industry-frameworks.md`](industry-frameworks.md).
 
 | Surface | What Hermes does |
 | :--- | :--- |

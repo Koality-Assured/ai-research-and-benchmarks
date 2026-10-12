@@ -1,0 +1,158 @@
+{
+  "mrr": 1.0,
+  "precisions": {
+    "p@1": 1.0,
+    "p@3": 0.9524,
+    "p@5": 0.9143
+  },
+  "avg_latency_ms": 667.34,
+  "total_queries": 7,
+  "queries": [
+    {
+      "query": "isolate work git worktree",
+      "category": "routing",
+      "expected": [
+        "ai-tooling/skills/meta/isolate-work/SKILL.md",
+        "scripts/routing/spawn_worktree.py"
+      ],
+      "retrieved": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 1.0,
+      "p@5": 1.0,
+      "top_match": "",
+      "latency_ms": 702.48
+    },
+    {
+      "query": "cost layers headroom compression",
+      "category": "cost-layers",
+      "expected": [
+        "ai-tooling/skills/cost-layers/headroom/SKILL.md",
+        "supporting/headroom/README.md",
+        "scripts/cost-layers/validate_headroom_compression.py"
+      ],
+      "retrieved": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 1.0,
+      "p@5": 1.0,
+      "top_match": "",
+      "latency_ms": 677.01
+    },
+    {
+      "query": "stride threat model assessment",
+      "category": "security",
+      "expected": [
+        "ai-tooling/agents/assessment-agent/AGENT.md",
+        "ai-tooling/skills/reporting/threat-model/SKILL.md"
+      ],
+      "retrieved": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 1.0,
+      "p@5": 1.0,
+      "top_match": "",
+      "latency_ms": 655.47
+    },
+    {
+      "query": "ast-grep structural pattern matching",
+      "category": "cost-layers",
+      "expected": [
+        "ai-tooling/skills/cost-layers/ast-grep/SKILL.md",
+        "supporting/ast-grep/README.md",
+        "scripts/cost-layers/validate_ast_grep.py"
+      ],
+      "retrieved": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 1.0,
+      "p@5": 1.0,
+      "top_match": "",
+      "latency_ms": 663.59
+    },
+    {
+      "query": "confluence cql document management",
+      "category": "collaboration",
+      "expected": [
+        "ai-tooling/skills/confluence/confluence-doc-manage/SKILL.md",
+        "ai-tooling/agents/docs-collab-agent/AGENT.md"
+      ],
+      "retrieved": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 1.0,
+      "p@5": 1.0,
+      "top_match": "",
+      "latency_ms": 615.77
+    },
+    {
+      "query": "slack block kit webhook message",
+      "category": "collaboration",
+      "expected": [
+        "ai-tooling/skills/slack/slack-message/SKILL.md",
+        "ai-tooling/agents/chat-collab-agent/AGENT.md"
+      ],
+      "retrieved": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 1.0,
+      "p@5": 1.0,
+      "top_match": "",
+      "latency_ms": 751.12
+    },
+    {
+      "query": "benchmark agent cost estimation",
+      "category": "benchmarks",
+      "expected": [
+        "ai-tooling/agents/benchmark-agent/AGENT.md",
+        "ai-tooling/skills/benchmarks/agent-cost-estimator/SKILL.md"
+      ],
+      "retrieved": [
+        "",
+        ""
+      ],
+      "mrr": 1.0,
+      "p@1": 1.0,
+      "p@3": 0.6667,
+      "p@5": 0.4,
+      "top_match": "",
+      "latency_ms": 605.97
+    }
+  ]
+}
