@@ -1,0 +1,39 @@
+{
+  "direct_package_versions": {
+    "headroom-ai": "0.40.0",
+    "tiktoken": "0.14.0",
+    "trafilatura": "2.3.1"
+  },
+  "headroom_api": "headroom.compress",
+  "headroom_model_label_for_local_token_counting": "gpt-4o",
+  "headroom_options": {
+    "compress_user_messages": false,
+    "kompress_model": "disabled",
+    "protect_recent": 0
+  },
+  "model_label_encoding_check": "o200k_base",
+  "notes": [
+    "The runner calls the local Headroom compression API and does not invoke an LLM provider client.",
+    "kompress_model=disabled excludes the separately distributed Kompress model weights; Headroom's local pipeline remains enabled.",
+    "The lockfile records the complete resolved dependency versions and package artifact hashes.",
+    "No host-specific file paths, raw logs, or credentials are included in this manifest."
+  ],
+  "platform": {
+    "machine": "AMD64",
+    "release": "11",
+    "system": "Windows"
+  },
+  "provider_api_calls": 0,
+  "python_implementation": "CPython",
+  "python_version": "3.13.16",
+  "run_timestamp_utc": "2026-10-09T22:36:57+00:00",
+  "schema_version": 1,
+  "source_hashes": {
+    "fixtures.py": "d3a4d0d77e5444c8566a3091a555a9c4460e18a48031bc632d2babf3a7ca2f57",
+    "pyproject.toml": "d05c379288ab9b4a7c263fb634e6b9b74c5fee8311740c3abb9cd2a0a4fcbfe9",
+    "run_benchmark.py": "4ceb4db9ca1967f5bb40c5170253c4112156ff7adedcd6d92165d5a1a3f6c88d",
+    "uv.lock": "c9577034979151b56d423bfe9d3570c3e58931a768be3b5141385384ce6573d7"
+  },
+  "tiktoken_encoding": "o200k_base",
+  "uv_version": "uv 0.12.23 (46b84fd0b 2026-10-03 x86_64-pc-windows-msvc)"
+}

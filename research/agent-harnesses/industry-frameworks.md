@@ -8,7 +8,7 @@ topics: [agents, harness, aider, hermes, pi, claude-code, openhands]
 
 # Industry AI coding and agent harnesses
 
-Investigation into industry-standard AI coding and agent harnesses: Aider, Nous Hermes (model family), Pi Coding Agent, Claude Code, and OpenHands (SWE-agent). Hermes Agent the CLI/runtime is covered in [`cli-harness-architecture.md`](./cli-harness-architecture.md).
+Investigation into industry-standard AI coding and agent harnesses: Aider, Nous Hermes (model family), Pi Coding Agent, Claude Code, and OpenHands (SWE-agent). Hermes Agent the CLI/runtime is covered in [`cli-harness-architecture.md`](cli-harness-architecture.md).
 
 ## 1. Aider: Graph-driven repomap and git-first pair programming
 
@@ -35,7 +35,7 @@ Aider operates as an in-terminal, git-native pair programmer designed around det
 
 ## 2. Nous Hermes (model family): Prompt-native special tokens
 
-This section is the **Nous Hermes / DeepHermes model family** — open-weights models with prompt-native function calling — not the Hermes Agent CLI/runtime. For the CLI harness (shared `AIAgent` loop, SQLite sessions, slash commands, `hermes -w` worktrees), see [`cli-harness-architecture.md`](./cli-harness-architecture.md) (Hermes Agent subsection).
+This section is the **Nous Hermes / DeepHermes model family** — open-weights models with prompt-native function calling — not the Hermes Agent CLI/runtime. For the CLI harness (shared `AIAgent` loop, SQLite sessions, slash commands, `hermes -w` worktrees), see [`cli-harness-architecture.md`](cli-harness-architecture.md) (Hermes Agent subsection).
 
 Nous Hermes represents the open-weights standard for prompt-native function calling and reasoning-trace preservation.
 

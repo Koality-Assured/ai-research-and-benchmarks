@@ -41,7 +41,7 @@ Automated Unit Tests (Passing & Failing Mock Resources)
 A reliable agentic or automated synthesis pipeline decomposes into four formal stages:
 
 ### Stage 1: Invariant Extraction
-Inspect the curated standard (e.g. [`docs/standards/kubernetes-security.md`](../../docs/standards/kubernetes-security.md)) and isolate atomic normative requirements:
+Inspect the curated standard (e.g. `docs/standards/kubernetes-security.md`) and isolate atomic normative requirements:
 
 ```markdown
 "Apply immutable image tags (digest or unique build ID); prohibit mutable tags such as :latest in production manifests."

@@ -1,0 +1,12 @@
+{
+  "overall_exit_code": 0,
+  "cost_status": "PASS",
+  "fleet_status": "PASS",
+  "fleet_pass_rate": "100.0%",
+  "retrieval_status": "PASS",
+  "retrieval_mrr": "1.0000",
+  "tool_status": "PASS",
+  "compression_ratio": "5.1%",
+  "task_status": "PASS",
+  "task_pass_rate": "100.0%"
+}

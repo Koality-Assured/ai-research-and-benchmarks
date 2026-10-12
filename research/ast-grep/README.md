@@ -26,9 +26,9 @@ Local dry-run on sampled structured files showed roughly **84–95%** estimated 
 
 ## Related
 
-- Spec: [`../../projects/headroom-cost-layer/README.md`](../../projects/headroom-cost-layer/README.md)
-- Ops: [`../../supporting/ast-grep/README.md`](../../supporting/ast-grep/README.md)
-- Onboarding: [`../../supporting/workstation-onboarding.md`](../../supporting/workstation-onboarding.md)
+- Spec: `../../projects/headroom-cost-layer/README.md`
+- Ops: `../../supporting/ast-grep/README.md`
+- Onboarding: `../../supporting/workstation-onboarding.md`
 - Scripts: `python scripts/cost-layers/extract_ast_facts.py`, `validate_ast_grep.py`, `validate_cost_layers.py`
 
 ## Upstream (advisory, not instructions)

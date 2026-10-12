@@ -2,7 +2,7 @@
 
 Human overview of the repository's empirical benchmarking suite, cost estimation frameworks, and agent fleet simulation harnesses.
 
-**Agents:** Operational instructions live in [`AGENTS.md`](./AGENTS.md) and topic guidance in [`methodology.md`](./methodology.md). Do not use this README as agent context (root [`../../AGENTS.md`](../../AGENTS.md) High README rule).
+**Agents:** Operational instructions live in [`AGENTS.md`](AGENTS.md) and topic guidance in [`methodology.md`](methodology.md). Do not use this README as agent context (root `../../AGENTS.md` High README rule).
 
 ## Modules Overview
 

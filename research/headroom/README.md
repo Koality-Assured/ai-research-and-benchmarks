@@ -43,5 +43,5 @@ MCP-only compression is opt-in per tool call and can itself add context (upstrea
 
 ## Related
 
-- Spec: [`../../projects/headroom-cost-layer/README.md`](../../projects/headroom-cost-layer/README.md)
-- Ops: [`../../supporting/headroom/README.md`](../../supporting/headroom/README.md)
+- Spec: `../../projects/headroom-cost-layer/README.md`
+- Ops: `../../supporting/headroom/README.md`
