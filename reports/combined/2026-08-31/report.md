@@ -31,8 +31,8 @@ Consolidated benchmark across agent cost estimation, fleet dry-run simulation, c
 
 ## Sub-Reports
 
-- [Agent Cost Estimates](file:///[REPO_ROOT]/results/cost-layers/agent-estimates/report.md)
-- [Fleet Dry-Run Simulation](file:///[REPO_ROOT]/results/benchmarks/fleet/2026-08-31/report.md)
-- [Corpus Retrieval Accuracy](file:///[REPO_ROOT]/results/benchmarks/retrieval/2026-08-31/report.md)
-- [Tool Compression Efficiency](file:///[REPO_ROOT]/results/benchmarks/tool-efficiency/2026-08-31/report.md)
-- [Coding Task Evaluation](file:///[REPO_ROOT]/results/benchmarks/task-eval/2026-08-31/report.md)
+- [Agent Cost Estimates](<repo-root>/results/cost-layers/agent-estimates/report.md)
+- Fleet Dry-Run Simulation
+- Corpus Retrieval Accuracy
+- Tool Compression Efficiency
+- Coding Task Evaluation

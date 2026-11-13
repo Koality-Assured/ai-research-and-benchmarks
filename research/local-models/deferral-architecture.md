@@ -7,13 +7,13 @@ date: 2026-10-09
 
 # Local Models: Frontier-to-Local Deferral Architecture & Harness Integration
 
-Architectural specification for enabling frontier coding agents (Gemini 3 Flash/Pro, Claude 3.7 Sonnet, GPT-4o/5) to defer bounded, mechanical, or high-volume tasks to locally served models via the Harness control plane and Harness CLI.
+Architectural specification for enabling frontier coding agents (Gemini 4 Hydrogen / 3.8 Pro, Claude 5.5 Sonnet, GPT) to defer bounded, mechanical, or high-volume tasks to locally served models via the Harness control plane and Harness CLI.
 
 ---
 
 ## 1. Problem Statement & Economics
 
-Frontier model APIs (Claude 3.7 Sonnet, GPT-4o, Gemini 3 Pro) are expensive ($2.50–$15.00 per 1M output tokens) and subject to strict rolling window rate limits (`RESOURCE_EXHAUSTED` / 429 errors). Autonomous agent sessions frequently expend thousands of frontier tokens on trivial, deterministic, or bulky operations:
+Frontier model APIs (Claude 5.5 Sonnet, GPT, Gemini 4 Hydrogen / 3.8 Pro) are expensive ($2.50–$15.00 per 1M output tokens) and subject to strict rolling window rate limits (`RESOURCE_EXHAUSTED` / 429 errors). Autonomous agent sessions frequently expend thousands of frontier tokens on trivial, deterministic, or bulky operations:
 - Fixing markdownlint or formatting violations across 20 files.
 - Generating unit test skeletons and boilerplate mocks.
 - Synthesizing commit messages conforming to Conventional Commits.
@@ -30,7 +30,7 @@ Tasks are classified into three operational categories:
 | Work Category | Typical Tasks | Optimal Execution Model | Recommended Model |
 | :--- | :--- | :--- | :--- |
 | **Category 0: System 1 Decision & Triage** *(Instant Sub-50ms)* | Fast skill dispatch, mutation/isolation gating, intent classification, prompt-injection screening, tool output sanitization, deferral tier selection. | **Local System 1 Engine** (Non-autoregressive forward pass) | Laya (ModernBERT-large 421M) / ModernBERT-base (149M) |
-| **Category 1: Frontier Orchestration** *(Do Not Defer)* | System design, cross-repo planning, security threat modeling (STRIDE), ambiguous requirement alignment, complex PR synthesis. | **Frontier Agent** (Parent orchestrator) | Claude 3.7 Sonnet / Gemini 3.8 Pro / GPT-5 |
+| **Category 1: Frontier Orchestration** *(Do Not Defer)* | System design, cross-repo planning, security threat modeling (STRIDE), ambiguous requirement alignment, complex PR synthesis. | **Frontier Agent** (Parent orchestrator) | Claude 5.5 Opus / Gemini 4 Hydrogen (High) / Gemini 3.8 Pro / GPT |
 | **Category 2: Bounded Autonomous Coding** *(Optional Deferral)* | Function implementation from detailed spec, single-file refactoring, writing complex algorithms, AST structure queries. | **Frontier OR Local Workhorse** | Qwen 2.5 Coder 14B (Q4_K_M) or Frontier Standard |
 | **Category 3: Mechanical & High-Volume** *(Mandatory Deferral)* | Markdown linting fixes, docstring generation, boilerplate test cases, log summarization, JSON schema extraction, commit message drafting. | **Local Model** (Zero-cost worker) | Qwen 2.5 Coder 7B / 14B |
 | **Category 4: Quota Fallback** *(Resilience Deferral)* | Secondary model exhaustion (429 recovery), offline air-gapped development, network degradation. | **Local Model** (Automatic failover) | Qwen 2.5 Coder 14B / 32B |
@@ -44,7 +44,7 @@ Tasks are classified into three operational categories:
 ```text
 +-----------------------------------------------------------------------------------------+
 |                                  FRONTIER ORCHESTRATOR                                  |
-|                 (Claude 3.7 Sonnet / Gemini 3.8 Flash / GPT-5 in Antigravity)           |
+|                 (Claude 5.5 Sonnet / Gemini 4 Hydrogen / GPT in Antigravity)            |
 +-----------------------------------------------------------------------------------------+
        |                                                                           |
        | 1. High-level architecture,                                               | 2. Mechanical task
@@ -149,17 +149,17 @@ Add the `local_model` configuration block under `adapters`:
 3. **Authentication Exemption**:
    - When `provider == "local"`, bypass external API key verification and default to a local token header (`Authorization: Bearer local`).
 
-### 4.3 Model Tiers Mapping (`ai-tooling/agents/model-tiers.md`)
+### 4.3 Model Tiers Mapping (ai-tooling/agents/model-tiers.md)
 
 Update the model tiers catalog to document `tier: local`:
 
 | Tier | Reasoning | Host Examples | Cloud Cost | Primary Use |
 | :--- | :--- | :--- | :--- | :--- |
 | `local` | mid / high | Qwen 2.5 Coder 14B / 7B | **$0.00** | Mechanical transformations, linting, docstrings, boilerplate, offline fallback |
-| `fast` | low | Claude Haiku / Gemini Flash Lite / Qwen 7B | <$0.15/1M | Quick classifications, leaf subagent search |
-| `standard`| mid | Gemini 3.8 Flash / Claude Sonnet / Qwen 32B | ~$0.50-$3.00/1M | General coding, PR creation, tool orchestration |
-| `high` | high | Claude 3.7 Sonnet / Gemini 3.8 Pro / R1-14B | ~$3.00-$15.00/1M| Deep research, architectural refactors, adversarial review |
-| `max` | max | GPT-5 / Claude Opus / Gemini Ultra | Premium | Strategic mission-critical alignment |
+| `fast` | low | Claude Haiku / Gemini 4 Hydrogen (Low) / Qwen 7B | ~$0.15-$1.50/1M | Quick classifications, leaf subagent search |
+| `standard` | mid | Gemini 4 Hydrogen (Medium) / Claude Sonnet / Qwen 32B | ~$1.50-$3.00/1M | General coding, PR creation, tool orchestration |
+| `high` | high | Claude Sonnet / Gemini 4 Hydrogen (High) / R1-14B | ~$1.50-$15.00/1M | Deep research, architectural refactors, adversarial review |
+| `max` | max | GPT / Claude Opus / Gemini 3.8 Pro / Gemini 4 Hydrogen (xhigh) | Premium | Strategic mission-critical alignment |
 
 ---
 
